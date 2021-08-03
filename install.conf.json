@@ -1,0 +1,29 @@
+[
+  {
+    "defaults": {
+      "link": {
+        "relink": true
+      }
+    }
+  },
+  {
+    "clean": { 
+      "~/.config": {
+        "recursive": true
+      }
+    }
+  },
+  {
+    "link": {
+      "~/.tmux.conf": "tmux.conf",
+      "~/.vim": "vim",
+      "~/.vimrc": "vimrc",
+      "~/.config": "config",
+      "~/.vim/pack/packages/start/vim-rspec/opt/rspec.vim": {
+        "path": "vim/pack/packages/start/vim-rspec/plugin/rspec.vim",
+        "create": true
+      }
+    }
+  }
+]
+
